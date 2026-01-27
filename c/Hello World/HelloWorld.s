@@ -16,8 +16,7 @@ main:
 	.cfi_def_cfa_register 6
 	leaq	.LC0(%rip), %rax
 	movq	%rax, %rdi
-	movl	$0, %eax
-	call	printf@PLT
+	call	puts@PLT
 	movl	$0, %eax
 	popq	%rbp
 	.cfi_def_cfa 7, 8
